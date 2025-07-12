@@ -1,0 +1,148 @@
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Body Layout and Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Dark gradient background */
+  color: #ffffff;
+}
+
+/* Container Styling for Form Box */
+.container {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Form Title */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Input Group Layout */
+.input-group {
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+/* Input Field Styling */
+input {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Focus Effect on Input Fields */
+input:focus {
+  border-color: #1e90ff;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.7);
+}
+
+/* Error Message Styling */
+.error {
+  color: #ff6b6b; /* Light red error text */
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Input Validation Borders */
+.valid {
+  border-color: #4caf50; /* Green border for valid input */
+}
+
+.invalid {
+  border-color: #ff6b6b; /* Red border for invalid input */
+}
+
+/* Password Strength Meter Bar */
+.strength-meter {
+  height: 5px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Corrected typo rbga → rgba */
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Password Strength Colors */
+.strenght-meter.weak {
+  background-color: red;
+}
+
+.strength-meter.medium {
+  background-color: orange;
+}
+
+.strenght-meter.strong {
+  background-color: green;
+}
+
+/* Submit Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background: linear-gradient(90deg, #0056b3, #0099cc);
+  transform: scale(1.05);
+}
+
+/* Placeholder Text Styling (Lighter Color) */
+input::placeholder {
+  color: #bbb;
+}
+
+/* Smooth Transitions for Inputs and Button */
+button,
+input {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Additional Focus Styling for Input Fields */
+input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+}
